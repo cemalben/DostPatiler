@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCESS_DENIED" xml:space="preserve">
+    <value>Erişim Reddedildi</value>
+  </data>
+  <data name="ACCESS_DENIED_TEXT" xml:space="preserve">
+    <value>Bu sayfaya erişim için izniniz bulunmamaktadır!</value>
+  </data>
+  <data name="ACCOUNT_LOGIN" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
+    <value>Yerel bir kullanıcı hesabıyla giriş yapın.</value>
+  </data>
+  <data name="CHANGE_EMAIL" xml:space="preserve">
+    <value>E-Mail Güncelle</value>
+  </data>
+  <data name="CHANGE_PASSWORD" xml:space="preserve">
+    <value>Parolanızı değiştirin</value>
+  </data>
+  <data name="CHECK_YOUR_MAIL" xml:space="preserve">
+    <value>Lütfen E-Posta'nızı kontrol ediniz</value>
+  </data>
+  <data name="CLICK" xml:space="preserve">
+    <value>Hesabınızı doğrulamak için tıklayın</value>
+  </data>
+  <data name="CONFIRM_MAIL" xml:space="preserve">
+    <value>E-Mail Onaylandı</value>
+  </data>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>Parolayı Doğrula</value>
+  </data>
+  <data name="CREATE_A_NEW_ACCOUNT" xml:space="preserve">
+    <value>Yeni bir kullanıcı oluştur</value>
+  </data>
+  <data name="CURRENT_PASSWORD" xml:space="preserve">
+    <value>Mevcut parola</value>
+  </data>
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
+    <value>E-Mail alanı zorunlu</value>
+  </data>
+  <data name="ENTER_YOUR_EMAIL" xml:space="preserve">
+    <value>Email adresinizi girin.</value>
+  </data>
+  <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
+    <value>Parolanızı mı unuttunuz?</value>
+  </data>
+  <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
+    <value>Geçersiz oturum açma girişimi</value>
+  </data>
+  <data name="MANAGE_CHANGE_ACCOUNT_SETTINGS" xml:space="preserve">
+    <value>Hesap ayarlarınızı değiştirin</value>
+  </data>
+  <data name="MANAGE_EMAIL" xml:space="preserve">
+    <value>E-Mail Güncelle</value>
+  </data>
+  <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
+    <value>Hesabınızı yönetin</value>
+  </data>
+  <data name="NEW_EMAIL" xml:space="preserve">
+    <value>Yeni E-Mail</value>
+  </data>
+  <data name="NEW_PASSWORD" xml:space="preserve">
+    <value>Yeni parola</value>
+  </data>
+  <data name="NORMALLY" xml:space="preserve">
+    <value>Normalde mail gönderilmiş olmalıydı:</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Parola alanı zorunlu</value>
+  </data>
+  <data name="PHONE_NUMBER" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>
+  <data name="PROFILE" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="REGISTER" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="REGISTER_AS_NEW_USER" xml:space="preserve">
+    <value>Yeni bir kullanıcı olarak kayıt ol</value>
+  </data>
+  <data name="REGISTER_CONFIRMATION" xml:space="preserve">
+    <value>Kayıt Onayı</value>
+  </data>
+  <data name="REMEMBER_ME" xml:space="preserve">
+    <value>Beni Hatırla</value>
+  </data>
+  <data name="RESEND" xml:space="preserve">
+    <value>Yeniden Gönder</value>
+  </data>
+  <data name="RESEND_EMAIL_CONFIRMATION" xml:space="preserve">
+    <value>E-Mail doğrulamasını yeniden gönder</value>
+  </data>
+  <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
+    <value>Parolanızı sıfırlayın</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
+    <value>Doğrulama postası gönder</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="The password and confirmation password do not match." xml:space="preserve">
+    <value>Parolalar eşleşmiyor.</value>
+  </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>{0}, en az {2} ve en fazla {1} karakter uzunluğunda olmalıdır.</value>
+  </data>
+  <data name="UPDATE_PASSWORD" xml:space="preserve">
+    <value>Parolayı Güncelle</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="VERIFICATION_SENT" xml:space="preserve">
+    <value>Doğrulama e-maili gönderildi. Lütfen posta kutunuzu kontrol ediniz.</value>
+  </data>
+</root>

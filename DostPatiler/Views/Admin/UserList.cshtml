@@ -1,0 +1,27 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<section class="about">
+    <h1>@localizer["ListofUsers"]</h1>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Email</td>
+                </tr>}
+        </tbody>
+    </table>
+</section>

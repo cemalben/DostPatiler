@@ -1,7 +1,14 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using DostPatiler.Resources;
 using DostPatiler.Models;
-
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System.Configuration;
+using System.Globalization;
+using System.Reflection;
+using DostPatiler.Resources;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,12 +28,39 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredLength = 3;
 });
 
+//culture
+builder.Services.Configure<RequestLocalizationOptions>(
+                opt => {
+                    var supportedCultures = new List<CultureInfo>
+                   {
+                            new CultureInfo("tr"),
+                            new CultureInfo("en"),
+                   };
+                    opt.DefaultRequestCulture = new RequestCulture("tr");
+                    opt.SupportedCultures = supportedCultures;
+                    opt.SupportedUICultures = supportedCultures;
+                });
+
+
 builder.Services.AddAuthorization(options => {
     options.AddPolicy("readpolicy",
-        builder => builder.RequireRole("Admin", "User"));
+        builder => builder.RequireRole("Admin", "Manager", "User"));
     options.AddPolicy("writepolicy",
-        builder => builder.RequireRole("Admin"));
+        builder => builder.RequireRole("Admin", "Manager"));
 });
+
+builder.Services.AddSingleton<IdentityLocalizationService>();
+builder.Services.AddSingleton<SharedLocalizationService>();
+builder.Services.AddLocalization(opt => { opt.ResourcesPath = "Resources"; });
+builder.Services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization(options =>
+    {
+        options.DataAnnotationLocalizerProvider = (type, factory) =>
+        {
+            var assemblyName = new AssemblyName(typeof(IdentityResource).GetTypeInfo().Assembly.FullName);
+            return factory.Create("IdentityResource", assemblyName.Name);
+        };
+    });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
                  .AddDefaultUI()
@@ -54,6 +88,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+var options = ((IApplicationBuilder)app).ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>();
+
+app.UseRequestLocalization(options.Value);
 
 app.MapRazorPages();
 

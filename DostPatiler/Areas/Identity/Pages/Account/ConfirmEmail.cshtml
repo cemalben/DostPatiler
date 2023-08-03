@@ -1,8 +1,11 @@
 ﻿@page
 @model ConfirmEmailModel
 @{
-    ViewData["Title"] = "Confirm email";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("CONFIRM_MAIL");
 }
 
-<h1>@ViewData["Title"]</h1>
-<partial name="_StatusMessage" model="Model.StatusMessage" />
+@inject DostPatiler.Resources.IdentityLocalizationService IdentityLocalizer
+
+<section class="about">
+    <h1>@ViewData["Title"]</h1>
+</section>
