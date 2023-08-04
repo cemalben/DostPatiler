@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IpLS2eTSTIP+prsMeP9QxTjHE+FcAtKxz7sd1Tn7DQk=",
+  "Hash": "BuocB52H6JGjY0g3E5eUYvHuutHjEpZ/BzKa5vYtZmU=",
   "Source": "DostPatiler",
   "BasePath": "_content/DostPatiler",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\hayvanlar\\istockphoto-1086004080-612x612.jpg",
+      "SourceId": "DostPatiler",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\",
+      "BasePath": "_content/DostPatiler",
+      "RelativePath": "img/hayvanlar/istockphoto-1086004080-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hayvanlar\\istockphoto-1086004080-612x612.jpg"
     },
     {
       "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\logo.png",

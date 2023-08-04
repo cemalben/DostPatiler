@@ -1,0 +1,64 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model IEnumerable<DostPatiler.Models.Hayvan>
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<section class="about">
+    <h1>@localizer["ListofAnimals"]</h1>
+
+    <p>
+        <a asp-action="Create">@localizer["Create"]</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.HayvanTur)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HayvanCins)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HayvanCinsiyet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HayvanYas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HayvanImage)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HayvanTur)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HayvanCins)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HayvanCinsiyet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HayvanYas)
+                    </td>
+                    <td>
+                        <img src="@Url.Content(item.HayvanImage)" class="d-block w-50" asp-append-version="true" />
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.HayvanId">@localizer["Edit"]</a> |
+                        <a asp-action="Details" asp-route-id="@item.HayvanId">@localizer["Details"]</a> |
+                        <a asp-action="Delete" asp-route-id="@item.HayvanId">@localizer["Delete"]</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

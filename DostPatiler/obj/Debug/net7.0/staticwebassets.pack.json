@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\hayvanlar\\istockphoto-1086004080-612x612.jpg",
+      "PackagePath": "staticwebassets\\img\\hayvanlar\\istockphoto-1086004080-612x612.jpg"
+    },
+    {
       "Id": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

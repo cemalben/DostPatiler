@@ -129,6 +129,12 @@
   <data name="Admin" xml:space="preserve">
     <value>ADMIN</value>
   </data>
+  <data name="AnimalList" xml:space="preserve">
+    <value>Hayvan Listesi</value>
+  </data>
+  <data name="Animals" xml:space="preserve">
+    <value>HAYVANLAR</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>İletişim</value>
   </data>
@@ -143,12 +149,6 @@
   </data>
   <data name="KeepFollow" xml:space="preserve">
     <value>Takipte Kalın!</value>
-  </data>
-  <data name="MovieList" xml:space="preserve">
-    <value>Film Listesi</value>
-  </data>
-  <data name="Movies" xml:space="preserve">
-    <value>FİLMLER</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Telefon</value>

@@ -40,7 +40,7 @@
                 <ul>
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a></li>
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">@localizer["About"]</a></li>
-                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Filmler" asp-action="Index">@localizer["Movies"]</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Hayvanlar" asp-action="Index">@localizer["Animals"]</a></li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         if (User.IsInRole("Admin"))
@@ -50,7 +50,7 @@
                                 <ul>
                                     <li><a asp-area="" asp-controller="Admin" asp-action="Roles">@localizer["Roles"]</a></li>
                                     <li><a asp-area="" asp-controller="Admin" asp-action="UserList">@localizer["UserList"]</a></li>
-                                    <li><a asp-area="" asp-controller="Film" asp-action="Index">@localizer["MovieList"]</a></li>
+                                    <li><a asp-area="" asp-controller="Hayvan" asp-action="Index">@localizer["AnimalList"]</a></li>
                                 </ul>
                             </li>
                         }

@@ -1,0 +1,62 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model DostPatiler.Models.Hayvan
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<section class="about">
+    <h1>@ViewData["Title"]</h1>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="HayvanId" />
+                <div class="form-group">
+                    <label asp-for="HayvanTur" class="control-label"></label>
+                    <select asp-for="HayvanTur" asp-items="Html.GetEnumSelectList<Tur>()" class="form-control"></select>
+                    <span asp-validation-for="HayvanTur" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="HayvanCins" class="control-label"></label>
+                    <input asp-for="HayvanCins" class="form-control" />
+                    <span asp-validation-for="HayvanCins" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="HayvanCinsiyet" class="control-label"></label>
+                    <select asp-for="HayvanCinsiyet" asp-items="Html.GetEnumSelectList<Cinsiyet>()" class="form-control"></select>
+                    <span asp-validation-for="HayvanCinsiyet" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="HayvanYas" class="control-label"></label>
+                    <input asp-for="HayvanYas" class="form-control" />
+                    <span asp-validation-for="HayvanYas" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CurrentHayvanImage" class="control-label"></label>
+                    <input asp-for="CurrentHayvanImage" class="form-control" disabled />
+                    <span asp-validation-for="CurrentHayvanImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="HayvanImage" class="control-label"></label>
+                    <input type="file" class="form-control" name="files" />
+                    <span asp-validation-for="HayvanImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value=@localizer["Value"] class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">@localizer["Back"]</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</section>

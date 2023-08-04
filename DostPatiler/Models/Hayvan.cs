@@ -10,6 +10,10 @@ namespace DostPatiler.Models
     {
         Erkek, Dişi
     }
+    public enum Tur
+    {
+        Kedi, Köpek, Kuş, Hamster, Tavşan
+    }
 
     public class Hayvan
     {
@@ -20,7 +24,7 @@ namespace DostPatiler.Models
         public Cinsiyet HayvanCinsiyet { get; set; }
         [Required(ErrorMessage = "Bu alan zorunlu.")]
         [Display(Name = "Hayvan Türü")]
-        public string HayvanTur { get; set; }
+        public Tur HayvanTur { get; set; }
         [Required(ErrorMessage = "Bu alan zorunlu.")]
         [Display(Name = "Hayvan Cinsi")]
         public string HayvanCins { get; set; }
@@ -28,9 +32,9 @@ namespace DostPatiler.Models
         [Display(Name = "Hayvan Yas")]
         public DateTime HayvanYas { get; set; }
         [Display(Name = "Hayvanın Güncel Fotoğrafı")]
-        public string CurrentHayvanImage { get; set; }
+        public string? CurrentHayvanImage { get; set; }
         [Display(Name = "Hayvanın Fotoğrafı")]
-        public string HayvanImage { get; set; }
+        public string? HayvanImage { get; set; }
 
     }
 }

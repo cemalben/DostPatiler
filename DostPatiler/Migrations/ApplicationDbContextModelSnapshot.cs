@@ -22,6 +22,38 @@ namespace DostPatiler.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DostPatiler.Models.Hayvan", b =>
+                {
+                    b.Property<int>("HayvanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HayvanId"));
+
+                    b.Property<string>("CurrentHayvanImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HayvanCins")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HayvanCinsiyet")
+                        .HasColumnType("int");
+
+                    b.Property<string>("HayvanImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HayvanTur")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("HayvanYas")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("HayvanId");
+
+                    b.ToTable("Hayvanlar");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")

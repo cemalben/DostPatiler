@@ -51,6 +51,24 @@ namespace DostPatiler.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Hayvanlar",
+                columns: table => new
+                {
+                    HayvanId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    HayvanCinsiyet = table.Column<int>(type: "int", nullable: false),
+                    HayvanTur = table.Column<int>(type: "int", nullable: false),
+                    HayvanCins = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HayvanYas = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CurrentHayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Hayvanlar", x => x.HayvanId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -213,6 +231,9 @@ namespace DostPatiler.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Hayvanlar");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

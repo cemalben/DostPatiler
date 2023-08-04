@@ -293,3 +293,17 @@ C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\Dost
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Shared._Layout.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Shared._LoginPartial.en.resources
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Shared._LoginPartial.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvanlar.Hayvan.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvanlar.Index.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvanlar.Index.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvanlar.Hayvan.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Create.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Create.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Delete.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Delete.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Details.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Details.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Edit.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Edit.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Index.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Index.tr.resources
