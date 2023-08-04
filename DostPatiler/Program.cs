@@ -44,9 +44,9 @@ builder.Services.Configure<RequestLocalizationOptions>(
 
 builder.Services.AddAuthorization(options => {
     options.AddPolicy("readpolicy",
-        builder => builder.RequireRole("Admin", "Manager", "User"));
+        builder => builder.RequireRole("Admin", "User"));
     options.AddPolicy("writepolicy",
-        builder => builder.RequireRole("Admin", "Manager"));
+        builder => builder.RequireRole("Admin"));
 });
 
 builder.Services.AddSingleton<IdentityLocalizationService>();

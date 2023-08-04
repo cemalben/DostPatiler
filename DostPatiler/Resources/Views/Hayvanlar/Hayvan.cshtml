@@ -1,0 +1,38 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model DostPatiler.Models.Hayvan
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <img src="@Url.Content(Model.HayvanImage)" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>@localizer["MovieDetails"]</h3>
+                    <ul>
+                        <li><strong>@localizer["Name"]</strong>: @Html.DisplayFor(model => model.HayvanTur)</li>
+                        <li><strong>@localizer["Category"]</strong>: @Html.DisplayFor(model => model.HayvanCins)</li>
+                        <li><strong>@localizer["Year"]</strong>: @Html.DisplayFor(model => model.HayvanCinsiyet)</li>
+                        <li><strong>@localizer["Imdb"]</strong>: @Html.DisplayFor(model => model.HayvanYas)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Details Section -->

@@ -1,0 +1,38 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model IEnumerable<DostPatiler.Models.Hayvan>
+
+@{
+    ViewData["Title"] = @localizer["Title"];
+}
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>@ViewData["Title"]</h2>
+            <p>@localizer["CheckOut"]</p>
+        </div>
+
+        <div class="row portfolio-container">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="@Url.Content(item.HayvanImage)" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="@Url.Content(item.HayvanImage)" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                            <a asp-area="" asp-controller="Hayvanlar" asp-action="Hayvan" asp-route-id="@item.HayvanId" title=@localizer["MoreDetail"]><i class="bi bi-link"></i></a>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>@Html.DisplayFor(modelItem => item.HayvanCins)</h4>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section><!-- End Portfolio Section -->

@@ -124,7 +124,7 @@
     <value>Hakkımızda</value>
   </data>
   <data name="AboutlContent" xml:space="preserve">
-    <value>Film izlemek vakit alan, görece meşakkatli bir aktivitedir. Bu nedenle bir filmi izlemeden önce, emin bir şekilde karar vermelisiniz. Pek aşina olmadığınız ve ısınamadığınız, atmosferine giremediğiniz türden filmleri seçerek izlemeniz, boşa vakit harcamanıza yol açar.</value>
+    <value>Hayvan Barınağı olarak, hayvan sevgisiyle dolu bir ekiple terkedilmiş ve sahipsiz hayvanlara umut dolu bir gelecek sunmak için çaba harcıyoruz. Amacımız, korunmaya muhtaç tüm hayvanlara sevgi dolu bir yuva sağlamak ve onları hayvansever ailelerle buluşturarak kalıcı bir bağ oluşturmalarına yardımcı olmaktır. 2000 yılından beri bu önemli görevle faaliyet gösteriyoruz ve binlerce hayvana umut olmaktan gurur duyuyoruz.</value>
   </data>
   <data name="Admin" xml:space="preserve">
     <value>ADMIN</value>
@@ -155,11 +155,5 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roller</value>
-  </data>
-  <data name="Student" xml:space="preserve">
-    <value>Öğrenci Taşımacılığı</value>
-  </data>
-  <data name="UserList" xml:space="preserve">
-    <value>Kullanıcı Listesi</value>
   </data>
 </root>
