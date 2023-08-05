@@ -9,7 +9,7 @@
 }
 
 <section class="about">
-    <h1>@localizer["Sahiplenme Başvurularınız"]</h1>
+    <h1>@localizer["AdoptionApplications"]</h1>
 
     <table class="table">
         <thead>
@@ -60,7 +60,7 @@
                     <td>
                         <form asp-action="SahiplendirmeOnay" asp-route-id="@item.HayvanId">
                             <input type="hidden" asp-for="@item.HayvanId" />
-                            <input type="submit" value=@localizer["Onayla"] class="btn btn-danger" />
+                            <input type="submit" value=@localizer["Apply"] class="btn btn-danger" />
                         </form>
                     </td>
                 </tr>

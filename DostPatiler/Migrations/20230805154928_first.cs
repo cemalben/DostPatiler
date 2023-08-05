@@ -56,12 +56,15 @@ namespace DostPatiler.Migrations
                 {
                     HayvanId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HayvanCinsiyet = table.Column<int>(type: "int", nullable: false),
                     HayvanTur = table.Column<int>(type: "int", nullable: false),
                     HayvanCins = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HayvanYas = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CurrentHayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CurrentHayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HayvanImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Durum = table.Column<int>(type: "int", nullable: false),
+                    Sahiplendirme = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

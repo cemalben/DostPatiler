@@ -8,7 +8,7 @@
 
 <section class="about">
     <h1>@ViewData["Title"]</h1>
-    <h2>Başvuru yaptıysanız tekrar yapmayın! Size geri dönüş yapılacaktır!</h2>
+    <h2>@ViewData["Context"]</h2>
 
     <hr />
     <div class="row">
@@ -45,10 +45,6 @@
                 </div>
             </form>
         </div>
-    </div>
-
-    <div>
-        <a asp-action="Index">@localizer["Back"]</a>
     </div>
 
     @section Scripts {

@@ -10,6 +10,7 @@ using System.Globalization;
 using System.Reflection;
 using DostPatiler.Resources;
 using DostPatiler.DA;
+using DostPatiler.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -86,6 +87,14 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetService(typeof(UserManager<IdentityUser>));
+    var roleManager = scope.ServiceProvider.GetService(typeof(RoleManager<IdentityRole>));
+
+    ContextSeed.Seed((UserManager<IdentityUser>)userManager, (RoleManager<IdentityRole>)roleManager);
+}
 
 app.MapControllerRoute(
     name: "default",

@@ -307,3 +307,11 @@ C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\Dost
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Edit.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Index.en.resources
 C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Hayvan.Index.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Admin.SahiplendirmeBasvurulari.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Admin.SahiplendirmeBasvurulari.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Admin.SahiplenmeBasvurulari.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Admin.SahiplenmeBasvurulari.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Basvuru.Sahiplen.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Basvuru.Sahiplen.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Basvuru.Sahiplendir.en.resources
+C:\Users\Baris Yilmaz\source\repos\DostPatiler\DostPatiler\obj\Debug\net7.0\DostPatiler.Resources.Views.Basvuru.Sahiplendir.tr.resources

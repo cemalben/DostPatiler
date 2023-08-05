@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z1RumaR/TwvCrl1mZlUs3bBeuPYXWWf2p9uQgFIjYJs=",
+  "Hash": "Vn8OMlEviK+NhH34ONaAGyzBVbw1E+VmTGqVHP5reXo=",
   "Source": "DostPatiler",
   "BasePath": "_content/DostPatiler",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hayvanlar\\istockphoto-1086004080-612x612.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\logo - Kopya.png",
+      "SourceId": "DostPatiler",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\",
+      "BasePath": "_content/DostPatiler",
+      "RelativePath": "img/logo - Kopya.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo - Kopya.png"
     },
     {
       "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\DostPatiler\\DostPatiler\\wwwroot\\img\\logo.png",

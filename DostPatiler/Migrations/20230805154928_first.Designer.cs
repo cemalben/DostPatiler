@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DostPatiler.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230804160112_third")]
-    partial class third
+    [Migration("20230805154928_first")]
+    partial class first
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,9 @@ namespace DostPatiler.Migrations
                     b.Property<string>("CurrentHayvanImage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Durum")
+                        .HasColumnType("int");
+
                     b.Property<string>("HayvanCins")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,12 +55,12 @@ namespace DostPatiler.Migrations
                     b.Property<DateTime>("HayvanYas")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("Sahiplendirme")
+                        .HasColumnType("bit");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("surec")
-                        .HasColumnType("int");
 
                     b.HasKey("HayvanId");
 
