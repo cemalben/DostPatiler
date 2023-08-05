@@ -4,6 +4,7 @@ using DostPatiler.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DostPatiler.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230804160112_third")]
+    partial class third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,9 +36,6 @@ namespace DostPatiler.Migrations
                     b.Property<string>("CurrentHayvanImage")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Durum")
-                        .HasColumnType("int");
-
                     b.Property<string>("HayvanCins")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,12 +52,12 @@ namespace DostPatiler.Migrations
                     b.Property<DateTime>("HayvanYas")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("Sahiplendirme")
-                        .HasColumnType("bit");
-
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("surec")
+                        .HasColumnType("int");
 
                     b.HasKey("HayvanId");
 

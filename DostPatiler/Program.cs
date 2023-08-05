@@ -9,6 +9,7 @@ using System.Configuration;
 using System.Globalization;
 using System.Reflection;
 using DostPatiler.Resources;
+using DostPatiler.DA;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,6 +50,7 @@ builder.Services.AddAuthorization(options => {
         builder => builder.RequireRole("Admin"));
 });
 
+builder.Services.AddTransient<IHayvanRepo, HayvanRepoConcrete>();
 builder.Services.AddSingleton<IdentityLocalizationService>();
 builder.Services.AddSingleton<SharedLocalizationService>();
 builder.Services.AddLocalization(opt => { opt.ResourcesPath = "Resources"; });

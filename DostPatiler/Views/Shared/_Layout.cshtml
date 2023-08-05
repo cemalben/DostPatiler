@@ -43,6 +43,16 @@
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Hayvanlar" asp-action="Index">@localizer["Animals"]</a></li>
                     @if (User.Identity.IsAuthenticated)
                     {
+                        if(User.IsInRole("User"))
+                        {
+                            <li class="dropdown">
+                                <a href="#"><span>BAŞVURULAR</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Basvuru" asp-action="Sahiplen">Sahiplenme Başvuruları</a></li>
+                                    <li><a asp-area="" asp-controller="Basvuru" asp-action="Sahiplendir">Sahiplendirme Başvuruları</a></li>
+                                </ul>
+                            </li>
+                        }
                         if (User.IsInRole("Admin"))
                         {
                             <li class="dropdown">
@@ -51,6 +61,8 @@
                                     <li><a asp-area="" asp-controller="Admin" asp-action="Roles">@localizer["Roles"]</a></li>
                                     <li><a asp-area="" asp-controller="Admin" asp-action="UserList">@localizer["UserList"]</a></li>
                                     <li><a asp-area="" asp-controller="Hayvan" asp-action="Index">@localizer["AnimalList"]</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="SahiplenmeBasvurulari">@localizer["Sahiplenme Basvurulari"]</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="SahiplendirmeBasvurulari">@localizer["Sahiplendirme Basvurulari"]</a></li>
                                 </ul>
                             </li>
                         }

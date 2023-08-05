@@ -1,8 +1,10 @@
-﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 
 @model IEnumerable<DostPatiler.Models.Hayvan>
 
 @{
+    var hayvans = Model.Where(x => x.UserId == string.Empty).ToList();
     ViewData["Title"] = @localizer["Title"];
 }
 
@@ -17,7 +19,7 @@
 
         <div class="row portfolio-container">
 
-            @foreach (var item in Model)
+            @foreach (var item in hayvans)
             {
                 <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-wrap">
@@ -27,8 +29,25 @@
                             <a asp-area="" asp-controller="Hayvanlar" asp-action="Hayvan" asp-route-id="@item.HayvanId" title=@localizer["MoreDetail"]><i class="bi bi-link"></i></a>
                         </div>
                         <div class="portfolio-info">
-                            <h4>@Html.DisplayFor(modelItem => item.HayvanCins)</h4>
+                        @if (User.Identity.IsAuthenticated){
+                            if (User.IsInRole("User")){
+                                    var user = Model.Where(x => x.UserId == User.FindFirst(ClaimTypes.NameIdentifier).Value).FirstOrDefault();
+                                    if (user == null)
+                                    {
+                                        <h4><a asp-action="MakeAnApplication" asp-route-id="@item.HayvanId">Sahiplen!</a></h4>
+                                    }
+                                    else
+                                    {
+                                        <h4>Aktif bir sahiplenme başvurunuz bulunmaktadır!</h4>
+                                    }
+                                }
+                        }
+                        else
+                        {
+                            <h4>Sahiplenme başvurusu için giriş yapın!</h4>
+                        }
                         </div>
+                        
                     </div>
                 </div>
             }
